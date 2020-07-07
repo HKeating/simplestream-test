@@ -1,7 +1,7 @@
 <template>
   <div class="video">
-    <h1>Video</h1>
-    <h2>{{ videoData.title }}</h2>
+    <router-link :to="{ name: 'Home' }">Home</router-link>
+    <h1 class="page-title">{{ videoData.title }}</h1>
     <video-player :videoData="videoData" />
   </div>
 </template>

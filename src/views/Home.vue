@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <h1 class="page-title">Video Player Test</h1>
     <carousel v-if="videos.length" :videoItems="videos" />
   </div>
 </template>
