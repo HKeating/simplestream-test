@@ -44,11 +44,30 @@ export default {
     background: #ffd700;
   }
 }
-.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-  content: '';
-  background-image: url('http://hybridtv.ss7.tv/techtest/assets/icons/btn-play.png');
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: center;
+.video-js {
+  .vjs-big-play-button .vjs-icon-placeholder:before {
+    content: '';
+    background-image: url('http://hybridtv.ss7.tv/techtest/assets/icons/btn-play.png');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+  }
+
+  .vjs-play-control {
+    .vjs-icon-placeholder:before {
+      background-repeat: no-repeat;
+      background-size: 10px;
+      background-position: center;
+    }
+
+    &.vjs-playing .vjs-icon-placeholder:before {
+      content: '';
+      background-image: url('http://hybridtv.ss7.tv/techtest/assets/icons/btn-pause.png');
+    }
+    &.vjs-paused .vjs-icon-placeholder:before {
+      content: '';
+      background-image: url('http://hybridtv.ss7.tv/techtest/assets/icons/btn-play.png');
+    }
+  }
 }
 </style>
