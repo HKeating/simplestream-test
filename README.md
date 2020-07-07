@@ -8,6 +8,8 @@ Linting and code style applied with [prettier](https://prettier.io/) and [eslint
 
 I initialised the project with Vue-cli and added Vuex at that point. In its current state the project does not require Vuex for state management, but a future version could avoid unecessary calls to the api by holding the returned videos in the store to or implementing caching.
 
+Instructions below to run the project locally, or you can view it [here](http://hkeating-simplestream-test.surge.sh/).
+
 ## Project setup
 ```
 yarn install
