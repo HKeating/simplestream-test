@@ -28,7 +28,7 @@ export default {
   margin: 40px;
 
   &:focus {
-    border: 2px solid #FFD700;
+    border: 2px solid #ffd700;
   }
 
   &__thumbnail {
