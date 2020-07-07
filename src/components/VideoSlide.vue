@@ -1,6 +1,9 @@
 <template>
   <div class="video-slide">
-    <router-link :to="{ name: 'Video', params: { videoData: video } }">
+    <router-link
+      :to="{ name: 'Video', params: { videoData: video } }"
+      class="video-slide__link"
+    >
       <img
         :src="video.poster"
         alt="Video thumbnail"
@@ -27,8 +30,8 @@ export default {
   height: 600px;
   margin: 40px;
 
-  &:focus {
-    border: 2px solid #ffd700;
+  &__link:focus {
+    outline: 2px solid #ffd700;
   }
 
   &__thumbnail {

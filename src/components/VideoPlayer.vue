@@ -37,3 +37,18 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.video-js .vjs-big-play-button {
+  &:focus {
+    background: #ffd700;
+  }
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: '';
+  background-image: url('http://hybridtv.ss7.tv/techtest/assets/icons/btn-play.png');
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+}
+</style>
