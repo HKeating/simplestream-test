@@ -5068,6 +5068,11 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+keen-slider@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-5.0.5.tgz#452631050f7dd9d7f8c9174eceef7309acf8e545"
+  integrity sha512-5b373h8VVJURYE2gTn6WRn41vFl6Tyslr9UnJPuBirrLC6UwJs8HfFwG1NRom9cdT002dQtU3HCaqLTS+rldzQ==
+
 keycode@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.2.0.tgz#3d0af56dc7b8b8e5cba8d0a97f107204eec22b04"
