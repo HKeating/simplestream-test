@@ -7,7 +7,7 @@
           :key="`video-slide-${index}`"
           :class="`keen-slider__slide number-slide${index + 1}`"
         >
-          {{ video.title }}
+          <video-slide :video="video" />
         </div>
       </div>
     </div>
@@ -17,9 +17,13 @@
 <script>
 import 'keen-slider/keen-slider.min.css';
 import KeenSlider from 'keen-slider';
+import VideoSlide from '@/components/VideoSlide';
 
 export default {
   name: 'Carousel',
+  components: {
+    VideoSlide,
+  },
   props: {
     videoItems: {
       type: Array,
@@ -35,19 +39,16 @@ export default {
   mounted() {
     this.slider = new KeenSlider(this.$refs.slider, {
       initial: this.currentSlide,
-      slidesPerView: 2,
+      slidesPerView: 1,
       slideChanged: s => {
         this.currentSlide = s.details().relativeSlide;
       },
       breakpoints: {
-        '(min-width: 600px) and (max-width: 860px)': {
-          slidesPerView: 3,
-        },
-        '(min-width: 861px) and (max-width: 1024px)': {
-          slidesPerView: 4,
+        '(min-width: 800px) and (max-width: 1024px)': {
+          slidesPerView: 2,
         },
         '(min-width: 1025px)': {
-          slidesPerView: 5,
+          slidesPerView: 3,
         },
       },
     });
